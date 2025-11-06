@@ -3,18 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 01 - Valor igual a 100</title>
+  <title>Ejercicio 01: ¿Es igual a 100?</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Ejercicio 01 - Verificar valor</h1>
+  <div class="contenedor">
+    <div class="tarjeta">
+      <h2>?? Ejercicio 01: ¿Es igual a 100?</h2>
 
-  <p>Presiona el botón para verificar si el valor es igual a 100.</p>
+      <div class="instrucciones">
+        <h3>?? Instrucciones</h3>
+        <p>
+          En este ejercicio, vamos a comprobar si una variable llamada <strong>valor</strong> 
+          es exactamente igual a 100.<br>
+          Si lo es, se mostrará un mensaje de felicitación. ¡Vamos a verlo en acción!
+        </p>
+      </div>
 
-  <button onclick="verificarValor()">Verificar</button>
+      <div id="resultado" class="resultado"></div>
 
-  <div id="resultado"></div>
+      <button onclick="ejecutarEjercicio()">Ejecutar Ejercicio</button>
+    </div>
+  </div>
+
+  <footer>
+    Curso de JavaScript - Enseñanza Media | Ejercicio 1 de Estructuras de Control
+  </footer>
 
   <script src="script.js"></script>
 </body>
