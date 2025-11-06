@@ -2,9 +2,14 @@
 function ejecutarEjercicio1() {
   const valor = 100;
   const resultado = document.getElementById("resultado1");
+  const instrucciones = document.querySelector(".tarjeta:nth-child(1) .instrucciones");
 
+  // Oculta las instrucciones
+  instrucciones.style.display = "none";
+
+  // Muestra el resultado
   if (valor === 100) {
-    resultado.textContent = "✅ ¡Correcto! El valor es exactamente igual a 100.";
+    resultado.textContent = "🎉 ¡Felicitaciones! El valor es exactamente igual a 100.";
     resultado.style.display = "block";
     resultado.style.color = "#155724";
     resultado.style.backgroundColor = "#e6ffed";
@@ -22,9 +27,14 @@ function ejecutarEjercicio1() {
 function ejecutarEjercicio2() {
   const valor = 85;
   const resultado = document.getElementById("resultado2");
+  const instrucciones = document.querySelector(".tarjeta:nth-child(2) .instrucciones");
 
+  // Oculta las instrucciones
+  instrucciones.style.display = "none";
+
+  // Muestra el resultado
   if (valor < 100) {
-    resultado.textContent = "✅ ¡Bien! El valor es menor que 100.";
+    resultado.textContent = "🎉 ¡Bien hecho! El valor es menor que 100.";
     resultado.style.display = "block";
     resultado.style.color = "#155724";
     resultado.style.backgroundColor = "#e6ffed";
@@ -37,3 +47,4 @@ function ejecutarEjercicio2() {
     resultado.style.borderColor = "#f5c6cb";
   }
 }
+
